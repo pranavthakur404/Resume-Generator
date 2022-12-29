@@ -1,2 +1,2 @@
 # Resume-Generator
- Resume generator using vanial js
+ Resume generator using vanila js
