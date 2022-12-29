@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume Generator</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -39,7 +39,7 @@
             <label>Address</label>
             <br>
             <input type="address">
-            
+
             <br>
 
             <label>City and pincode</label>
@@ -103,17 +103,27 @@
             <input type="text" placeholder="Input 2..">
             <br>
             <input type="text" placeholder="Input 3..">
-            
+
             <br>
 
+            <!-- experience box start -->
             <div class="experience-box">
                 <label>Experience</label>
                 <br>
-                <input type="text">    
+                <input class="exp" type="text">
             </div>
             <button class="add-more-experience">Add more</button>
-            
-            
+            <!-- experience box end -->
+
+            <!-- technical knowledge -->
+            <div class="technical-box">
+                <label>Technical Skills</label>
+                <br>
+                <input class="tech" type="text">
+            </div>
+            <button class="add_more_skills">Add more</button>
+
+
 
         </section>
     </main>
