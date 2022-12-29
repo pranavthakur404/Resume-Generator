@@ -1,0 +1,74 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: 15px;
+    overflow-x: hidden;
+    background-color: #fafafa;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2% 1%;
+}
+/* header start */
+header{
+    text-align: center;
+}
+header h1{
+   font-size: 2rem;
+   text-decoration: underline;
+}
+/* header ends */
+
+/* main start */
+main{
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.address{
+    margin-top: 10px;
+}
+.address p{
+    line-height:20px;
+}
+.contact{
+    margin-top: 10px;
+    line-height: 20px;
+}
+.objective{
+    margin-top:25px;
+}
+.objective p{
+    margin-top: 10px;
+    text-indent: 20px;
+}
+.education{
+    margin-top: 25px;
+}
+.education p{
+    margin-top: 10px;
+    text-indent: 20px;
+}
+.technical-skills{
+    margin-top: 25px;
+}
+.technical-skills p{
+    text-indent: 20px;
+}
+.personal-details{
+    margin-top: 25px;
+    line-height: 25px;
+}
+.declaration{
+    margin-top: 25px;
+}
+.signature{
+    text-align: right;
+    margin-top: 30px;
+}
+/* main ends */

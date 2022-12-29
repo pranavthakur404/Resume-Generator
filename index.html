@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,69 +9,117 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
 </head>
+
 <body>
-    
+
     <header class="container">
-        <h1>Resume</h1>
+        <h1>Resume Generator</h1>
     </header>
 
-    <!-- main section start -->
-    <main>
-       <h3 class="name">Ritesh kumar</h3>
-       
-       <!-- address -->
-       <div class="address">
-        <p class="line1">142-sector, RK Puram</p>
-        <p class="line2">New Delhi - 110022</p>
-       </div>
+    <!-- main section -->
+    <main class="container">
+        <!-- personal infomation -->
+        <section class="personal box box1">
 
-       <!-- mobile and email -->
-       <div class="contact">
-        <p class="mobile">Mo: +91 9717918473</p>
-        <p class="email">Gmail ID:-pranavufc@gmail.com</p>
-       </div>
+            <!-- name -->
+            <label> Full Name</label>
+            <br>
+            <input type="text">
 
-       <!-- objective -->
-       <div class="objective">
-        <h3>Objective</h3>
-         <p>To be associated with an organization which gives a me a career path and job satisfaction using my skills to <br>
-            secure a challenging position in a reputable organization to expand my learning knowledge and skills.
-         </p>
-       </div>
-    
-       <!-- education -->
-       <ul class="education">
-        <h3>Education</h3>
-           <p>10th Passes from CBSE Board</p>
-       </ul>
+            <br>
 
-       <!-- technical knowledge -->
-       <ul class="technical-skills">
-        <h3>Technical Knowledge</h3>
-        <p>Basic computer knowledge</p>
-       </ul>
+            <!-- name -->
+            <label>Father's Name</label>
+            <br>
+            <input type="text">
 
-       <!-- Personal Details -->
-       <div class="personal-details">
-        <h3>Personal Details</h3>
-         <p>Father's Name :-<span>Sunil kumar</span></p>
-         <p>DoB :-<span>06-10-2000</span></p>
-         <p>Marital Status :-<span>Unmarried</span></p>
-         <p>Gender :-<span>Male</span></p>
-         <p>Nationality :-<span>Indian</span></p>
-       </div>
+            <br>
 
-       <!-- Declaration -->
-       <div class="declaration">
-        <h3>Declaration</h3>
-        <p>I hereby declare that all the information furnished above istrue to the best of my knowledge and belief</p>
-       </div>
+            <!-- address -->
+            <label>Address</label>
+            <br>
+            <input type="address">
+            
+            <br>
 
-       <!-- signature -->
-       <h4 class="signature">(Ritesh kumar)</h4>
+            <label>City and pincode</label>
+            <br>
+            <input type="text">
 
+            <br>
+
+            <!-- contact -->
+            <label>Mobile</label>
+            <br>
+            <input type="number">
+
+            <br>
+
+            <!-- email -->
+            <label>Email</label>
+            <br>
+            <input type="email">
+
+            <br>
+
+            <!-- date of birth -->
+            <label>Date of Birth</label>
+            <br>
+            <input type="date">
+
+            <br>
+
+            <!-- gender -->
+            <label>Gender</label>
+            <br>
+            <select name="gender">
+                <option value="Male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+            <br>
+
+            <!-- Marital Status -->
+            <label>Marital Status</label>
+            <br>
+            <select name="Marital Status">
+                <option value="Unmarried">Unmarried</option>
+                <option value="Married">Married</option>
+            </select>
+
+
+        </section>
+
+        <!-- email -->
+
+
+        <!-- professional information -->
+        <section class="professional box box1">
+
+            <label>Education</label>
+            <br>
+            <input type="text" placeholder="Input 1..">
+            <br>
+            <input type="text" placeholder="Input 2..">
+            <br>
+            <input type="text" placeholder="Input 3..">
+            
+            <br>
+
+            <div class="experience-box">
+                <label>Experience</label>
+                <br>
+                <input type="text">    
+            </div>
+            <button class="add-more-experience">Add more</button>
+            
+            
+
+        </section>
     </main>
-    <!-- main section ends -->
+
+
 
 </body>
+
 </html>

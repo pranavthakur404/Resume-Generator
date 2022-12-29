@@ -1,74 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Roboto+Condensed:wght@300;400;700&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
 }
 body{
     font-size: 15px;
     overflow-x: hidden;
-    background-color: #fafafa;
 }
 .container{
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 2% 1%;
 }
-/* header start */
 header{
     text-align: center;
 }
-header h1{
-   font-size: 2rem;
-   text-decoration: underline;
-}
-/* header ends */
-
-/* main start */
 main{
-    max-width: 900px;
-    margin: 0 auto;
-    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+main .box{
+    width: 49%;
+    padding: 2%;
+}
+.personal label{
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+.personal input{
+    width: 75%;
+    height: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 7px;
+}
+.personal select{
+    padding: 7px 15px;
+    margin-bottom: 20px;
+    font-size: 15px;
 }
 
-.address{
-    margin-top: 10px;
+
+.professional label{
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: 700;
 }
-.address p{
-    line-height:20px;
+.professional input{
+    width: 75%;
+    height: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 7px;
 }
-.contact{
-    margin-top: 10px;
-    line-height: 20px;
+.professional button{
+    padding: 7px 15px;
+    background-color: skyblue;
+    border: none;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.5s background;
 }
-.objective{
-    margin-top:25px;
+.professional button:hover{
+    background-color: blue;
 }
-.objective p{
-    margin-top: 10px;
-    text-indent: 20px;
-}
-.education{
-    margin-top: 25px;
-}
-.education p{
-    margin-top: 10px;
-    text-indent: 20px;
-}
-.technical-skills{
-    margin-top: 25px;
-}
-.technical-skills p{
-    text-indent: 20px;
-}
-.personal-details{
-    margin-top: 25px;
-    line-height: 25px;
-}
-.declaration{
-    margin-top: 25px;
-}
-.signature{
-    text-align: right;
-    margin-top: 30px;
-}
-/* main ends */
