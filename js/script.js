@@ -26,32 +26,36 @@ add_more_tech.addEventListener("click", () => {
 
 // getting personal details on clicking details button
 const gen_btn = document.querySelector("#generate-button");
+const get_res = document.querySelector(".get-res");
 gen_btn.addEventListener('click', (e) => {
-    e.preventDefault();
     //getting personal details
-    const fullName = document.querySelector(".name").value;
-    const fatherName = document.querySelector(".father_name").value;
-    const address1 = document.querySelector(".add1").value;
-    const address2 = document.querySelector(".add2").value;
-    const mobile = document.querySelector(".mobile").value;
-    const email = document.querySelector(".email").value;
-    const DOB = document.querySelector(".dob").value;
-    const gender = document.querySelector(".gender").value;
-    const maritalStatus = document.querySelector(".marital").value;
+    var fullName = document.querySelector(".name").value;
+    var fatherName = document.querySelector(".father_name").value;
+    var address1 = document.querySelector(".add1").value;
+    var address2 = document.querySelector(".add2").value;
+    var mobile = document.querySelector(".mobile").value;
+    var email = document.querySelector(".email").value;
+    var DOB = document.querySelector(".dob").value;
+    var gender = document.querySelector(".gender").value;
+    var maritalStatus = document.querySelector(".marital").value;
 
     //getting professional details
-    const education = document.querySelectorAll(".edu")
-    const exp = document.querySelectorAll(".exp")
-    const technical = document.querySelectorAll(".tech");
+    var education = document.querySelectorAll(".edu")
+    var exp = document.querySelectorAll(".exp")
+    var technical = document.querySelectorAll(".tech");
     
     // Creating resume page dynamically 
+
+    gen_btn.style.display = 'none';
+    get_res.style.display = 'block';
+    
 
     //pending .....
 
 
-
-
-    // going to resume page
-    window.location = "template.html";
+    
 })
+
+
+
 
