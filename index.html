@@ -9,143 +9,146 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/template.css">
     <script src="js/script.js" type="module" type="module" defer></script>
-    
-    
+
+
 </head>
 
 <body>
 
     <header class="container">
-        <h1>Resume Generator</h1>
+        <h1 class="header">Resume Generator</h1>
     </header>
 
     <!-- main section -->
-    <main class="main container">
-      <form action="#">
-          <!-- personal infomation -->
-          <section class="personal box box1">
+    <main class="main container" >
+        <form action="#">
+            <!-- personal infomation -->
+            <section class="personal box box1">
 
-            <h1>Personal Details</h1>
+                <h1>Personal Details</h1>
 
-            <br>
+                <br>
 
-            <!-- name -->
-            <label> Full Name</label>
-            <br>
-            <input class="name" type="text">
+                <!-- name -->
+                <label> Full Name</label>
+                <br>
+                <input class="name" type="text">
 
-            <br>
+                <br>
 
-            <!-- name -->
-            <label>Father's Name</label>
-            <br>
-            <input class="father_name" type="text">
+                <!-- name -->
+                <label>Father's Name</label>
+                <br>
+                <input class="father_name" type="text">
 
-            <br>
+                <br>
 
-            <!-- address -->
-            <label>Address</label>
-            <br>
-            <input class="add1" type="address">
+                <!-- address -->
+                <label>Address</label>
+                <br>
+                <input class="add1" type="address">
 
-            <br>
+                <br>
 
-            <label>City and pincode</label>
-            <br>
-            <input class="add2"  type="text">
+                <label>City and pincode</label>
+                <br>
+                <input class="add2" type="text">
 
-            <br>
+                <br>
 
-            <!-- contact -->
-            <label>Mobile</label>
-            <br>
-            <input class="mobile"  type="number">
+                <!-- contact -->
+                <label>Mobile</label>
+                <br>
+                <input class="mobile" type="number">
 
-            <br>
+                <br>
+
+                <!-- email -->
+                <label>Email</label>
+                <br>
+                <input class="email" type="email">
+
+                <br>
+
+                <!-- date of birth -->
+                <label>Date of Birth</label>
+                <br>
+                <input class="dob" type="date">
+
+                <br>
+
+                <!-- gender -->
+                <label>Gender</label>
+                <br>
+                <select class="gender" name="gender">
+                    <option value="Male" selected>Male</option>
+                    <option value="female">Female</option>
+                </select>
+
+                <br>
+
+                <!-- Marital Status -->
+                <label>Marital Status</label>
+                <br>
+                <select class="marital" name="Marital Status">
+                    <option value="Unmarried" selected>Unmarried</option>
+                    <option value="Married">Married</option>
+                </select>
+
+
+            </section>
 
             <!-- email -->
-            <label>Email</label>
-            <br>
-            <input class="email"  type="email">
-
-            <br>
-
-            <!-- date of birth -->
-            <label>Date of Birth</label>
-            <br>
-            <input class="dob"  type="date">
-
-            <br>
-
-            <!-- gender -->
-            <label>Gender</label>
-            <br>
-            <select class="gender" name="gender">
-                <option value="Male" selected>Male</option>
-                <option value="female">Female</option>
-            </select>
-
-            <br>
-
-            <!-- Marital Status -->
-            <label>Marital Status</label>
-            <br>
-            <select  class="marital" name="Marital Status">
-                <option value="Unmarried" selected>Unmarried</option>
-                <option value="Married">Married</option>
-            </select>
 
 
-        </section>
+            <!-- professional information -->
+            <section class="professional box box1">
 
-        <!-- email -->
+                <h1>Professional Details</h1>
 
-
-        <!-- professional information -->
-        <section class="professional box box1">
-
-            <h1>Professional Details</h1>
-
-            <br>
-
-            <label>Education</label>
-            <br>
-            <input class="edu" type="text" placeholder="10th..">
-            <br>
-            <input class="edu" type="text" placeholder="12th..">
-            <br>
-            <input class="edu" type="text" placeholder="Graduation">
-
-            <br>
-
-            <!-- experience box start -->
-            <div class="experience-box">
-                <label>Experience</label>
                 <br>
-                <input  class="exp" type="text">
-            </div>
-            <button class="add-more-experience">Add more</button>
-            <!-- experience box end -->
 
-            <!-- technical knowledge -->
-            <div class="technical-box">
-                <label>Technical Skills</label>
+                <label>Education</label>
                 <br>
-                <input  class="tech" type="text">
-            </div>
-            <button class="add_more_skills">Add more</button>
+                <input class="edu" type="text" placeholder="10th..">
+                <br>
+                <input class="edu" type="text" placeholder="12th..">
+                <br>
+                <input class="edu" type="text" placeholder="Graduation">
+                <br>
+                <input class="edu" type="text" placeholder="Post Graduation...">
 
-        </section>
-      </form>
+                <br>
+
+                <!-- experience box start -->
+                <div class="experience-box">
+                    <label>Experience</label>
+                    <br>
+                    <input class="exp" type="text" placeholder="Experience 1...">
+                    <input class="exp" type="text" placeholder="Experience 2...">
+                    <input class="exp" type="text" placeholder="Experience 3...">
+                </div>
+                <!-- experience box end -->
+
+                <!-- technical knowledge -->
+                <div class="technical-box">
+                    <label>Technical Skills</label>
+                    <br>
+                    <input class="tech" type="text" placeholder="Skill 1...">
+                    <input class="tech" type="text" placeholder="Skill 2...">
+                    <input class="tech" type="text" placeholder="Skill 3...">
+                </div>
+
+            </section>
+        </form>
     </main>
 
 
-            <!-- save details button -->
-            <div class="generator-button">
-                <button id="generate-button">Generate</button> 
-            </div>
-
-
+    <!-- save details button -->
+    <div class="generator-button">
+        <button id="generate-button">Generate</button>
+        <button class="print-button">Print</button>
+    </div>
 
 </body>
 

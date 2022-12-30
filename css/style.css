@@ -21,22 +21,29 @@ header{
 form{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 main .box{
-    width: 49%;
+    width: 100%;
     padding: 2%;
+    background-color: white;
 }
 .personal label{
-    font-size: 15px;
+    font-size: 17px;
     letter-spacing: 2px;
     font-weight: 700;
 }
 .personal input{
     width: 75%;
-    height: 30px;
+    height: 40px;
+    font-size: 15px;
+    margin-top: 10px;
     margin-bottom: 30px;
     padding: 10px;
     border-radius: 7px;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
 }
 .personal select{
     padding: 7px 15px;
@@ -46,16 +53,20 @@ main .box{
 
 
 .professional label{
-    font-size: 15px;
+    font-size: 20px;
     letter-spacing: 2px;
     font-weight: 700;
 }
 .professional input{
     width: 75%;
-    height: 30px;
+    height: 40px;
     margin-bottom: 30px;
     padding: 10px;
     border-radius: 7px;
+    font-size: 15px;
+    border: none;
+    border-bottom: 2px solid black;
+    margin-top: 10px;
 }
 .professional button{
     padding: 7px 15px;
@@ -93,4 +104,21 @@ main .box{
 }
 .get-res{
     display: none;
+}
+.print-button{
+    background-color: skyblue;
+    font-size: 15px;
+    padding: 7px 20px;
+    border: none;
+    color: white;
+    font-weight: 800;
+    display: none;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+/* SECTION  */
+section{
+    max-width: 1000px;
+    margin: 0 auto;
 }

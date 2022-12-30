@@ -1,28 +1,28 @@
 // Working on add experince field
-const add_more_exp = document.querySelector(".add-more-experience")
-add_more_exp.addEventListener('click', () => {
-    const exp_box = document.querySelector(".experience-box");
-    const input = document.createElement('input')
-    input.setAttribute("class", "exp");
-    input.setAttribute("type", "text");
+// const add_more_exp = document.querySelector(".add-more-experience")
+// add_more_exp.addEventListener('click', () => {
+//     const exp_box = document.querySelector(".experience-box");
+//     const input = document.createElement('input')
+//     input.setAttribute("class", "exp");
+//     input.setAttribute("type", "text");
 
-    // now appeding new input field
-    exp_box.append(input);
-})
+//     // now appeding new input field
+//     exp_box.append(input);
+// })
 
-// woking on add technical skills
-const add_more_tech = document.querySelector(".add_more_skills");
-add_more_tech.addEventListener("click", () => {
-    const technical_box = document.querySelector(".technical-box");
-    const input = document.createElement("input");
-    input.setAttribute("class", "tech");
-    input.setAttribute("type", "text");
+// // woking on add technical skills
+// const add_more_tech = document.querySelector(".add_more_skills");
+// add_more_tech.addEventListener("click", () => {
+//     const technical_box = document.querySelector(".technical-box");
+//     const input = document.createElement("input");
+//     input.setAttribute("class", "tech");
+//     input.setAttribute("type", "text");
     
 
-    // now appeding new input field
-    technical_box.append(input);
+//     // now appeding new input field
+//     technical_box.append(input);
 
-})
+// })
 
 // getting personal details on clicking details button
 const gen_btn = document.querySelector("#generate-button");
@@ -43,6 +43,8 @@ gen_btn.addEventListener('click', (e) => {
     const education = document.querySelectorAll(".edu")
     const exp = document.querySelectorAll(".exp")
     const technical = document.querySelectorAll(".tech");
+
+
     
     // Creating resume page dynamically 
 
@@ -75,26 +77,36 @@ gen_btn.addEventListener('click', (e) => {
     <!-- education -->
     <ul class="education">
      <h3>Education</h3>
-        <p>${education[0]}</p>
-        <p>${education[1]}</p>
-        <p>${education[2]}</p>
+        <p>${education[0].value}</p>
+        <p>${education[1].value}</p>
+        <p>${education[2].value}</p>
+        <p>${education[3].value}</p>
     </ul>
 
+    <ul class="experience">
+        <h3>Experience</h3>
+           <p>${exp[0].value}</p>
+           <p>${exp[1].value}</p>
+           <p>${exp[2].value}</p>
+       </ul>
+
     <!-- technical knowledge -->
-    <ul class="technical-skills">
+    <div class="technical-skills">
      <h3>Technical Knowledge</h3>
-      
-    </ul>
+      <p>${technical[0].value}</p>
+      <p>${technical[1].value}</p>
+      <p>${technical[2].value}</p>
+    </div>
 
     <!-- Personal Details -->
     <div class="personal-details">
-     <h3>Personal Details</h3>
-      <p>Father's Name :- ${fatherName}</p>
-      <p>DoB :-<span>${DOB}</span></p>
-      <p>Marital Status :-<span>${maritalStatus}</span></p>
-      <p>Gender :-<span>${gender}</span></p>
-      <p>Nationality :-<span>Indian</span></p>
-    </div>
+        <h3>Personal Details</h3>
+         <p><span class="mar1">Father's Name</span> : ${fatherName}</p>
+         <p><span class="mar2">DoB</span>: ${DOB}</p>
+         <p><span class="mar3">Marital Status</span> : ${maritalStatus}</p>
+         <p><span class="mar4">Gender</span> : ${gender}</p>
+         <p><span class="mar5">Nationality</span>: Indian</p>
+       </div>
 
     <!-- Declaration -->
     <div class="declaration">
@@ -111,7 +123,22 @@ gen_btn.addEventListener('click', (e) => {
     mainSection.append(section)
     
     formSection.style.display ='none';
- 
+
+
+    // print button
+    const gen_btn = document.querySelector("#generate-button");
+    const print_btn = document.querySelector(".print-button");
+    gen_btn.style.display = 'none'
+    print_btn.style.display = 'block'
+
+    // hiding header
+    const heading = document.querySelector(".header");
+    heading.innerText = 'Resume';
+})
+const print_btn = document.querySelector(".print-button");
+print_btn.addEventListener("click",()=>{
+    print_btn.style.display = 'none';
+    window.print();
 
 })
 

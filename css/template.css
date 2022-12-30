@@ -30,12 +30,21 @@ main{
     margin-bottom: 50px;
 }
 
+
 .address{
     margin-top: 10px;
 }
 .address p{
     line-height:20px;
 }
+
+.experience{
+    margin-top: 10px;
+}
+.experience p{
+    line-height:20px;
+}
+
 .contact{
     margin-top: 10px;
     line-height: 20px;
@@ -45,20 +54,19 @@ main{
 }
 .objective p{
     margin-top: 10px;
-    text-indent: 20px;
 }
 .education{
     margin-top: 25px;
 }
 .education p{
-    margin-top: 10px;
-    text-indent: 20px;
+    margin-top: 5px;
+
 }
 .technical-skills{
     margin-top: 25px;
 }
 .technical-skills p{
-    text-indent: 20px;
+    margin-top: 5px;
 }
 .personal-details{
     margin-top: 25px;
@@ -72,3 +80,19 @@ main{
     margin-top: 30px;
 }
 /* main ends */
+
+.mar1{
+    margin-right: 4px;
+}
+.mar2{
+    margin-right: 66px;
+}
+.mar3{
+    margin-right: 7px;
+}
+.mar4{
+    margin-right: 47px;
+}
+.mar5{
+    margin-right: 27px;
+}
