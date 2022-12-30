@@ -29,32 +29,94 @@ const gen_btn = document.querySelector("#generate-button");
 const get_res = document.querySelector(".get-res");
 gen_btn.addEventListener('click', (e) => {
     //getting personal details
-    var fullName = document.querySelector(".name").value;
-    var fatherName = document.querySelector(".father_name").value;
-    var address1 = document.querySelector(".add1").value;
-    var address2 = document.querySelector(".add2").value;
-    var mobile = document.querySelector(".mobile").value;
-    var email = document.querySelector(".email").value;
-    var DOB = document.querySelector(".dob").value;
-    var gender = document.querySelector(".gender").value;
-    var maritalStatus = document.querySelector(".marital").value;
+    const fullName = document.querySelector(".name").value;
+    const fatherName = document.querySelector(".father_name").value;
+    const address1 = document.querySelector(".add1").value;
+    const address2 = document.querySelector(".add2").value;
+    const mobile = document.querySelector(".mobile").value;
+    const email = document.querySelector(".email").value;
+    const DOB = document.querySelector(".dob").value;
+    const gender = document.querySelector(".gender").value;
+    const maritalStatus = document.querySelector(".marital").value;
 
     //getting professional details
-    var education = document.querySelectorAll(".edu")
-    var exp = document.querySelectorAll(".exp")
-    var technical = document.querySelectorAll(".tech");
+    const education = document.querySelectorAll(".edu")
+    const exp = document.querySelectorAll(".exp")
+    const technical = document.querySelectorAll(".tech");
     
     // Creating resume page dynamically 
 
-    gen_btn.style.display = 'none';
-    get_res.style.display = 'block';
     
 
-    //pending .....
-
-
+    const section = document.createElement("section");
+    section.innerHTML = `
+    <h3 class="name">${fullName}</h3>
     
+    <!-- address -->
+    <div class="address">
+     <p class="line1">${address1}</p>
+     <p class="line2">${address2}</p>
+    </div>
+
+    <!-- mobile and email -->
+    <div class="contact">
+     <p class="mobile">Mo: ${mobile}</p>
+     <p class="email">Gmail ID:-${email}</p>
+    </div>
+
+    <!-- objective -->
+    <div class="objective">
+     <h3>Objective</h3>
+      <p>To be associated with an organization which gives a me a career path and job satisfaction using my skills to <br>
+         secure a challenging position in a reputable organization to expand my learning knowledge and skills.
+      </p>
+    </div>
+ 
+    <!-- education -->
+    <ul class="education">
+     <h3>Education</h3>
+        <p>${education[0]}</p>
+        <p>${education[1]}</p>
+        <p>${education[2]}</p>
+    </ul>
+
+    <!-- technical knowledge -->
+    <ul class="technical-skills">
+     <h3>Technical Knowledge</h3>
+      
+    </ul>
+
+    <!-- Personal Details -->
+    <div class="personal-details">
+     <h3>Personal Details</h3>
+      <p>Father's Name :- ${fatherName}</p>
+      <p>DoB :-<span>${DOB}</span></p>
+      <p>Marital Status :-<span>${maritalStatus}</span></p>
+      <p>Gender :-<span>${gender}</span></p>
+      <p>Nationality :-<span>Indian</span></p>
+    </div>
+
+    <!-- Declaration -->
+    <div class="declaration">
+     <h3>Declaration</h3>
+     <p>I hereby declare that all the information furnished above istrue to the best of my knowledge and belief</p>
+    </div>
+
+    <!-- signature -->
+    <h4 class="signature">(${fullName})</h4>`
+
+    //  selecting main element
+    const mainSection = document.querySelector(".main")
+    const formSection = document.querySelector("form");
+    mainSection.append(section)
+    
+    formSection.style.display ='none';
+ 
+
 })
+
+
+
 
 
 
