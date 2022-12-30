@@ -18,62 +18,67 @@
 
     <!-- main section -->
     <main class="container">
-        <!-- personal infomation -->
-        <section class="personal box box1">
+      <form action="#">
+          <!-- personal infomation -->
+          <section class="personal box box1">
+
+            <h1>Personal Details</h1>
+
+            <br>
 
             <!-- name -->
             <label> Full Name</label>
             <br>
-            <input type="text">
+            <input class="name" type="text">
 
             <br>
 
             <!-- name -->
             <label>Father's Name</label>
             <br>
-            <input type="text">
+            <input class="father_name" type="text">
 
             <br>
 
             <!-- address -->
             <label>Address</label>
             <br>
-            <input type="address">
+            <input class="add1" type="address">
 
             <br>
 
             <label>City and pincode</label>
             <br>
-            <input type="text">
+            <input class="add2"  type="text">
 
             <br>
 
             <!-- contact -->
             <label>Mobile</label>
             <br>
-            <input type="number">
+            <input class="mobile"  type="number">
 
             <br>
 
             <!-- email -->
             <label>Email</label>
             <br>
-            <input type="email">
+            <input class="email"  type="email">
 
             <br>
 
             <!-- date of birth -->
             <label>Date of Birth</label>
             <br>
-            <input type="date">
+            <input class="dob"  type="date">
 
             <br>
 
             <!-- gender -->
             <label>Gender</label>
             <br>
-            <select name="gender">
-                <option value="Male">Male</option>
+            <select class="gender" name="gender">
+                <option value="Male" selected>Male</option>
                 <option value="female">Female</option>
             </select>
 
@@ -82,8 +87,8 @@
             <!-- Marital Status -->
             <label>Marital Status</label>
             <br>
-            <select name="Marital Status">
-                <option value="Unmarried">Unmarried</option>
+            <select  class="marital" name="Marital Status">
+                <option value="Unmarried" selected>Unmarried</option>
                 <option value="Married">Married</option>
             </select>
 
@@ -96,13 +101,17 @@
         <!-- professional information -->
         <section class="professional box box1">
 
+            <h1>Professional Details</h1>
+
+            <br>
+
             <label>Education</label>
             <br>
-            <input type="text" placeholder="Input 1..">
+            <input class="edu" type="text" placeholder="10th..">
             <br>
-            <input type="text" placeholder="Input 2..">
+            <input class="edu" type="text" placeholder="12th..">
             <br>
-            <input type="text" placeholder="Input 3..">
+            <input class="edu" type="text" placeholder="Graduation">
 
             <br>
 
@@ -110,7 +119,7 @@
             <div class="experience-box">
                 <label>Experience</label>
                 <br>
-                <input class="exp" type="text">
+                <input  class="exp" type="text">
             </div>
             <button class="add-more-experience">Add more</button>
             <!-- experience box end -->
@@ -119,14 +128,17 @@
             <div class="technical-box">
                 <label>Technical Skills</label>
                 <br>
-                <input class="tech" type="text">
+                <input  class="tech" type="text">
             </div>
             <button class="add_more_skills">Add more</button>
 
-
-
         </section>
+      </form>
     </main>
+
+
+            <!-- save details button -->
+     <button type="submit" id="generate-button">Generate</button>        
 
 
 

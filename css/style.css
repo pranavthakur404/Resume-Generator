@@ -18,7 +18,7 @@ body{
 header{
     text-align: center;
 }
-main{
+form{
     display: flex;
     justify-content: space-between;
 }
@@ -69,4 +69,19 @@ main .box{
 }
 .professional button:hover{
     background-color: blue;
+}
+
+/* generate button */
+#generate-button{
+    margin-top: 100px;
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 10px 15px;
+    color: white;
+    background-color: green;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
 }
