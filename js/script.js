@@ -69,7 +69,7 @@ gen_btn.addEventListener('click', (e) => {
     <!-- objective -->
     <div class="objective">
      <h3>Objective</h3>
-      <p>To be associated with an organization which gives a me a career path and job satisfaction using my skills to <br>
+      <p>To be associated with an organization which gives a me a career path and job satisfaction using my skills to 
          secure a challenging position in a reputable organization to expand my learning knowledge and skills.
       </p>
     </div>
@@ -111,7 +111,7 @@ gen_btn.addEventListener('click', (e) => {
     <!-- Declaration -->
     <div class="declaration">
      <h3>Declaration</h3>
-     <p>I hereby declare that all the information furnished above istrue to the best of my knowledge and belief</p>
+     <p>I hereby declare that all the information furnished above istrue to the best of my knowledge and belief.</p>
     </div>
 
     <!-- signature -->
